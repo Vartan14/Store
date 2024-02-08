@@ -1,0 +1,74 @@
+[
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Adidas Originals Black Monogram Hoodie",
+      "description": "Soft fabric for sweatshirts. Style and comfort are a way of life.",
+      "price": "79.00",
+      "quantity": 10,
+      "image": "product_images/Adidas-hoodie.png",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "The North Face blue jacket",
+      "description": "Smooth fabric. Waterproof coating. Light and warm down filling.",
+      "price": "399.00",
+      "quantity": 10,
+      "image": "product_images/Blue-jacket-The-North-Face.png",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "ASOS DESIGN oversized sporty top in brown",
+      "description": "Plush texture material. Comfortable and soft.",
+      "price": "119.00",
+      "quantity": 10,
+      "image": "product_images/Brown-sports-oversized-top-ASOS-DESIGN.png",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "Nike Heritage Backpack in Black",
+      "description": "Thick fabric. Lightweight material.",
+      "price": "52.00",
+      "quantity": 5,
+      "image": "product_images/Black-Nike-Heritage-backpack.png",
+      "category": 4
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Dr Martens 1461 Bex 3-Eye Platform Black Shoes",
+      "description": "Smooth leather upper. Natural material.",
+      "price": "149.00",
+      "quantity": 3,
+      "image": "product_images/Black-Dr-Martens-shoes.png",
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "ASOS DESIGN wide leg formal trousers in navy",
+      "description": "Lightweight, stretchy seersucker textured fabric.",
+      "price": "89.00",
+      "quantity": 7,
+      "image": "product_images/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png",
+      "category": 2
+    }
+  }
+]

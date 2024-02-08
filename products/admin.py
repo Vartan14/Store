@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 
-from products.models import ProductCategory, Product, Basket
+from products.models import Basket, Product, ProductCategory
 
 admin.site.register(ProductCategory)
 
@@ -11,7 +11,7 @@ class ProductAdmin(ModelAdmin):
     list_display = ('name', 'price', 'quantity', 'category')
     fields = ('name', 'description', ('price', 'quantity'), 'image', 'category')
 
-    readonly_fields = ('description', )
+    # readonly_fields = ('description', )
     search_fields = ('name',)
 
     ordering = ('-name',)
