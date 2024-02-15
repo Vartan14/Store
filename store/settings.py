@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.humanize',
 
     'allauth',
     'allauth.account',
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
 
     'products',
     'users',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -168,14 +170,14 @@ LOGOUT_REDIRECT_URL = '/'
 
 # Sending emails
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+#EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 465
-#
-# EMAIL_HOST_USER = 'clothingstoreproject2024@gmail.com'
-# EMAIL_HOST_PASSWORD = 'xmwl brjx ynbx yezc'
-# EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+
+EMAIL_HOST_USER = 'clothingstoreproject2024@gmail.com'
+EMAIL_HOST_PASSWORD = 'xmwl brjx ynbx yezc'
+EMAIL_USE_SSL = True
 
 # OAuth 2.0
 
@@ -204,3 +206,12 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+# Celery
+
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
+CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
+
+# Stripe
+
+STRIPE_PUBLIC_KEY = 'pk_test_51Ojef2D3CJ6zZaS2OqHTbXEa7jwmMQh2WrsFKF17MPWBVJ5H3E191GP9yQSabWpv6KncmAW19Ly7NMAMPui1Fqmv00vxndimX6'
+STRIPE_SECRET_KEY = 'sk_test_51Ojef2D3CJ6zZaS2kxFuNhdVskGeUMop0uNAXsokXgdh2qKvUqCIqtZ5DdT8ZTN9b2h1U0NmGk6zaEttZsI4dOOj00np9sfKiA'

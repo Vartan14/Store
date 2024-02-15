@@ -18,7 +18,7 @@
                         {% else %}
                             {% static 'vendor/img/users/default_avatar.jpg' %}
                         {% endif %}"
-                     class="img-thumbnail">
+                     class="img-thumbnail" alt="avatar">
             </div>
             <form action="{% url 'users:profile' user.id %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
